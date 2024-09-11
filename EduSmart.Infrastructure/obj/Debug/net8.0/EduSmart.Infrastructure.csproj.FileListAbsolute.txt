@@ -1,0 +1,15 @@
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.csproj.AssemblyReference.cache
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.AssemblyInfoInputs.cache
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.AssemblyInfo.cs
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.csproj.CoreCompileInputs.cache
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Infrastructure.deps.json
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Infrastructure.dll
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Infrastructure.pdb
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Core.dll
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Core.pdb
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.5B4C23E3.Up2Date
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.dll
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\refint\EduSmart.Infrastructure.dll
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.pdb
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\ref\EduSmart.Infrastructure.dll

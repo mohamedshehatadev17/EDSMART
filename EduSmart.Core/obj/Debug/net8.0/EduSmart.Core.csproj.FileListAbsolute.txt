@@ -1,0 +1,14 @@
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\bin\Debug\net8.0\EduSmart.Core.deps.json
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\bin\Debug\net8.0\EduSmart.Core.runtimeconfig.json
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\bin\Debug\net8.0\EduSmart.Core.dll
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\bin\Debug\net8.0\EduSmart.Core.pdb
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\EduSmart.Core.csproj.AssemblyReference.cache
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\EduSmart.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\EduSmart.Core.AssemblyInfoInputs.cache
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\EduSmart.Core.AssemblyInfo.cs
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\EduSmart.Core.csproj.CoreCompileInputs.cache
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\EduSmart.Core.dll
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\refint\EduSmart.Core.dll
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\EduSmart.Core.pdb
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\EduSmart.Core.genruntimeconfig.cache
+F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Core\obj\Debug\net8.0\ref\EduSmart.Core.dll
