@@ -9,18 +9,14 @@ using System.Threading.Tasks;
 namespace EduSmart.Core.Entities
 {
     public class QuizOption
-    {
-        public int Id { get; set; }
+    {   
+            public int Id { get; set; }
+            public string OptionText { get; set; }
+            [ForeignKey("Quiz")]
+            public int QuizId { get; set; }
+            public Quiz Quiz { get; set; } // Navigation Property
+        
 
-        [Required]
-        public string OptionText { get; set; }
 
-        public bool IsCorrect { get; set; }
-
-        [Required]
-        public int QuestionId { get; set; }
-
-        [ForeignKey("QuestionId")]
-        public virtual QuizQuestion Question { get; set; }
     }
 }

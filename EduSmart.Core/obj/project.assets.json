@@ -3862,11 +3862,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj",
+      "projectUniqueName": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj",
       "projectName": "EduSmart.Core",
-      "projectPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj",
+      "projectPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj",
       "packagesPath": "C:\\Users\\L-Stylash\\.nuget\\packages\\",
-      "outputPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Core\\obj\\",
+      "outputPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\L-Stylash\\AppData\\Roaming\\NuGet\\NuGet.Config",

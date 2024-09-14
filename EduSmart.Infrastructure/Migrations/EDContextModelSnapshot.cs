@@ -30,10 +30,6 @@ namespace EduSmart.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -42,6 +38,36 @@ namespace EduSmart.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("EduSmart.Core.Entities.CompletionCertificate", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CertificateUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateIssued")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("CompletionCertificates");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Course", b =>
@@ -55,30 +81,74 @@ namespace EduSmart.Infrastructure.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("CourseImage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("InstructorId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("InstructorId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
+                    b.HasIndex("InstructorId");
+
                     b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("EduSmart.Core.Entities.Enrollment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("Enrollments");
+                });
+
+            modelBuilder.Entity("EduSmart.Core.Entities.Instructor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Instructors");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Lesson", b =>
@@ -111,6 +181,29 @@ namespace EduSmart.Infrastructure.Migrations
                     b.ToTable("Lessons");
                 });
 
+            modelBuilder.Entity("EduSmart.Core.Entities.LessonCompletion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("LessonId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("studentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LessonId");
+
+                    b.HasIndex("studentId");
+
+                    b.ToTable("LessonsCompletions");
+                });
+
             modelBuilder.Entity("EduSmart.Core.Entities.Module", b =>
                 {
                     b.Property<int>("Id")
@@ -141,7 +234,7 @@ namespace EduSmart.Infrastructure.Migrations
                     b.ToTable("Modules");
                 });
 
-            modelBuilder.Entity("EduSmart.Core.Entities.MultimediaContent", b =>
+            modelBuilder.Entity("EduSmart.Core.Entities.Progress", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -149,27 +242,30 @@ namespace EduSmart.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ContentType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ContentUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("LessonId")
+                    b.Property<int>("CompletedModules")
                         .HasColumnType("int");
 
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsCourseCompleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ModuleId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LessonId");
+                    b.HasIndex("CourseId");
 
-                    b.ToTable("MultimediaContents");
+                    b.HasIndex("ModuleId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("Progresses");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Quiz", b =>
@@ -180,32 +276,24 @@ namespace EduSmart.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Description")
+                    b.Property<string>("CorrectAnswer")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("LessonId")
-                        .HasColumnType("int");
 
                     b.Property<int?>("ModuleId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Question")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("LessonId")
-                        .IsUnique()
-                        .HasFilter("[LessonId] IS NOT NULL");
 
                     b.HasIndex("ModuleId")
                         .IsUnique()
                         .HasFilter("[ModuleId] IS NOT NULL");
 
-                    b.ToTable("Quizs");
+                    b.ToTable("Quiz");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.QuizOption", b =>
@@ -216,32 +304,7 @@ namespace EduSmart.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("IsCorrect")
-                        .HasColumnType("bit");
-
                     b.Property<string>("OptionText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("QuestionId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("QuestionId");
-
-                    b.ToTable("QuizOptions");
-                });
-
-            modelBuilder.Entity("EduSmart.Core.Entities.QuizQuestion", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("QuestionText")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -252,7 +315,70 @@ namespace EduSmart.Infrastructure.Migrations
 
                     b.HasIndex("QuizId");
 
-                    b.ToTable("QuizQuestions");
+                    b.ToTable("QuizOption");
+                });
+
+            modelBuilder.Entity("EduSmart.Core.Entities.Student", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Students");
+                });
+
+            modelBuilder.Entity("EduSmart.Core.Entities.StudentCourse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("StudentCourses");
+                });
+
+            modelBuilder.Entity("EduSmart.Core.Entities.CompletionCertificate", b =>
+                {
+                    b.HasOne("EduSmart.Core.Entities.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EduSmart.Core.Entities.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Course", b =>
@@ -263,7 +389,34 @@ namespace EduSmart.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EduSmart.Core.Entities.Instructor", "Instructor")
+                        .WithMany("Courses")
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Category");
+
+                    b.Navigation("Instructor");
+                });
+
+            modelBuilder.Entity("EduSmart.Core.Entities.Enrollment", b =>
+                {
+                    b.HasOne("EduSmart.Core.Entities.Course", "Course")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EduSmart.Core.Entities.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Lesson", b =>
@@ -277,6 +430,25 @@ namespace EduSmart.Infrastructure.Migrations
                     b.Navigation("Module");
                 });
 
+            modelBuilder.Entity("EduSmart.Core.Entities.LessonCompletion", b =>
+                {
+                    b.HasOne("EduSmart.Core.Entities.Lesson", "Lesson")
+                        .WithMany("LessonCompletions")
+                        .HasForeignKey("LessonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EduSmart.Core.Entities.Student", "Student")
+                        .WithMany("LessonCompletions")
+                        .HasForeignKey("studentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Lesson");
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("EduSmart.Core.Entities.Module", b =>
                 {
                     b.HasOne("EduSmart.Core.Entities.Course", "Course")
@@ -288,52 +460,70 @@ namespace EduSmart.Infrastructure.Migrations
                     b.Navigation("Course");
                 });
 
-            modelBuilder.Entity("EduSmart.Core.Entities.MultimediaContent", b =>
+            modelBuilder.Entity("EduSmart.Core.Entities.Progress", b =>
                 {
-                    b.HasOne("EduSmart.Core.Entities.Lesson", "Lesson")
-                        .WithMany("MultimediaContents")
-                        .HasForeignKey("LessonId")
+                    b.HasOne("EduSmart.Core.Entities.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Lesson");
+                    b.HasOne("EduSmart.Core.Entities.Module", "Module")
+                        .WithMany()
+                        .HasForeignKey("ModuleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EduSmart.Core.Entities.Student", "Student")
+                        .WithMany("Progresses")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Module");
+
+                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Quiz", b =>
                 {
-                    b.HasOne("EduSmart.Core.Entities.Lesson", "Lesson")
-                        .WithOne("LessonQuiz")
-                        .HasForeignKey("EduSmart.Core.Entities.Quiz", "LessonId");
-
                     b.HasOne("EduSmart.Core.Entities.Module", "Module")
                         .WithOne("ModuleQuiz")
                         .HasForeignKey("EduSmart.Core.Entities.Quiz", "ModuleId");
-
-                    b.Navigation("Lesson");
 
                     b.Navigation("Module");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.QuizOption", b =>
                 {
-                    b.HasOne("EduSmart.Core.Entities.QuizQuestion", "Question")
-                        .WithMany("Options")
-                        .HasForeignKey("QuestionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Question");
-                });
-
-            modelBuilder.Entity("EduSmart.Core.Entities.QuizQuestion", b =>
-                {
                     b.HasOne("EduSmart.Core.Entities.Quiz", "Quiz")
-                        .WithMany("Questions")
+                        .WithMany("Options")
                         .HasForeignKey("QuizId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Quiz");
+                });
+
+            modelBuilder.Entity("EduSmart.Core.Entities.StudentCourse", b =>
+                {
+                    b.HasOne("EduSmart.Core.Entities.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EduSmart.Core.Entities.Student", "Student")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Category", b =>
@@ -343,33 +533,40 @@ namespace EduSmart.Infrastructure.Migrations
 
             modelBuilder.Entity("EduSmart.Core.Entities.Course", b =>
                 {
+                    b.Navigation("Enrollments");
+
                     b.Navigation("Modules");
+                });
+
+            modelBuilder.Entity("EduSmart.Core.Entities.Instructor", b =>
+                {
+                    b.Navigation("Courses");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Lesson", b =>
                 {
-                    b.Navigation("LessonQuiz")
-                        .IsRequired();
-
-                    b.Navigation("MultimediaContents");
+                    b.Navigation("LessonCompletions");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Module", b =>
                 {
                     b.Navigation("Lessons");
 
-                    b.Navigation("ModuleQuiz")
-                        .IsRequired();
+                    b.Navigation("ModuleQuiz");
                 });
 
             modelBuilder.Entity("EduSmart.Core.Entities.Quiz", b =>
                 {
-                    b.Navigation("Questions");
+                    b.Navigation("Options");
                 });
 
-            modelBuilder.Entity("EduSmart.Core.Entities.QuizQuestion", b =>
+            modelBuilder.Entity("EduSmart.Core.Entities.Student", b =>
                 {
-                    b.Navigation("Options");
+                    b.Navigation("Enrollments");
+
+                    b.Navigation("LessonCompletions");
+
+                    b.Navigation("Progresses");
                 });
 #pragma warning restore 612, 618
         }

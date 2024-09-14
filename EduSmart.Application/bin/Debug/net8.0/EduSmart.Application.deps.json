@@ -10,7 +10,6 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "EduSmart.Core": "1.0.0",
-          "EduSmart.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.8"
@@ -876,14 +875,6 @@
         "runtime": {
           "EduSmart.Core.dll": {}
         }
-      },
-      "EduSmart.Infrastructure/1.0.0": {
-        "dependencies": {
-          "EduSmart.Core": "1.0.0"
-        },
-        "runtime": {
-          "EduSmart.Infrastructure.dll": {}
-        }
       }
     }
   },
@@ -1405,11 +1396,6 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "EduSmart.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "EduSmart.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

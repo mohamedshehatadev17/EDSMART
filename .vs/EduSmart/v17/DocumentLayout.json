@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\",
+  "WorkspaceRootPath": "G:\\ProjectApi_v1\\EduSmart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C3470A1-34D6-4A5E-8AE2-90A31ABFC94C}|EduSmart.Core\\EduSmart.Core.csproj|f:\\.net track iti\\mvc\\day2\\edusmart\\edusmart.core\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3470A1-34D6-4A5E-8AE2-90A31ABFC94C}|EduSmart.Core\\EduSmart.Core.csproj|solutionrelative:edusmart.core\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|g:\\projectapi_v1\\edusmart\\edusmart.application\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3470A1-34D6-4A5E-8AE2-90A31ABFC94C}|EduSmart.Core\\EduSmart.Core.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.core\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3470A1-34D6-4A5E-8AE2-90A31ABFC94C}|EduSmart.Core\\EduSmart.Core.csproj|solutionrelative:edusmart.core\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Course.cs",
-              "DocumentMoniker": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Core\\Entities\\Course.cs",
-              "RelativeDocumentMoniker": "EduSmart.Core\\Entities\\Course.cs",
-              "ToolTip": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Core\\Entities\\Course.cs",
-              "RelativeToolTip": "EduSmart.Core\\Entities\\Course.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAABAAAAASAAAA",
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\CourseService.cs",
+              "RelativeDocumentMoniker": "EduSmart.Application\\Services\\CourseService.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\CourseService.cs",
+              "RelativeToolTip": "EduSmart.Application\\Services\\CourseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T18:39:31.897Z",
+              "WhenOpened": "2024-09-14T20:51:02.112Z",
               "EditorCaption": ""
             },
             {
@@ -36,6 +44,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lesson.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\Entities\\Lesson.cs",
+              "RelativeDocumentMoniker": "EduSmart.Core\\Entities\\Lesson.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\Entities\\Lesson.cs",
+              "RelativeToolTip": "EduSmart.Core\\Entities\\Lesson.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA6wBoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T18:55:41.838Z",
+              "EditorCaption": ""
             }
           ]
         }

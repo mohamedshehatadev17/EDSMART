@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace EduSmart.Core.Entities
 {
@@ -15,7 +16,8 @@ namespace EduSmart.Core.Entities
         [Required]
         [StringLength(200)]
         public string Title { get; set; }
-
+        [NotMapped]
+        public IFormFile Material { get; set; }
         public string Description { get; set; }
 
         public int OrderInCourse { get; set; }
@@ -28,6 +30,6 @@ namespace EduSmart.Core.Entities
 
         public virtual ICollection<Lesson> Lessons { get; set; }
 
-        public virtual Quiz ModuleQuiz { get; set; }
+        public virtual Quiz? ModuleQuiz { get; set; }
     }
 }

@@ -13,3 +13,21 @@ F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\Edu
 F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\refint\EduSmart.Infrastructure.dll
 F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.pdb
 F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\ref\EduSmart.Infrastructure.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Infrastructure.deps.json
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Infrastructure.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Infrastructure.pdb
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Application.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Core.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Application.pdb
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\bin\Debug\net8.0\EduSmart.Core.pdb
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.csproj.AssemblyReference.cache
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.AssemblyInfoInputs.cache
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.AssemblyInfo.cs
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.csproj.CoreCompileInputs.cache
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.sourcelink.json
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.5B4C23E3.Up2Date
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\refint\EduSmart.Infrastructure.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\EduSmart.Infrastructure.pdb
+G:\ProjectApi_v1\EduSmart\EduSmart.Infrastructure\obj\Debug\net8.0\ref\EduSmart.Infrastructure.dll

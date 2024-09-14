@@ -1495,19 +1495,6 @@
         "runtime": {
           "bin/placeholder/EduSmart.Core.dll": {}
         }
-      },
-      "EduSmart.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "EduSmart.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/EduSmart.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/EduSmart.Infrastructure.dll": {}
-        }
       }
     }
   },
@@ -3879,18 +3866,12 @@
       "type": "project",
       "path": "../EduSmart.Core/EduSmart.Core.csproj",
       "msbuildProject": "../EduSmart.Core/EduSmart.Core.csproj"
-    },
-    "EduSmart.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../EduSmart.Infrastructure/EduSmart.Infrastructure.csproj",
-      "msbuildProject": "../EduSmart.Infrastructure/EduSmart.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 13.0.1",
       "EduSmart.Core >= 1.0.0",
-      "EduSmart.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8"
@@ -3902,11 +3883,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj",
+      "projectUniqueName": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj",
       "projectName": "EduSmart.Application",
-      "projectPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj",
+      "projectPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj",
       "packagesPath": "C:\\Users\\L-Stylash\\.nuget\\packages\\",
-      "outputPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Application\\obj\\",
+      "outputPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\L-Stylash\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3923,11 +3904,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj": {
-              "projectPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj"
-            },
-            "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj": {
-              "projectPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj"
+            "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj": {
+              "projectPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj"
             }
           }
         }
