@@ -11,23 +11,13 @@ namespace EduSmart.Core.Entities
     public class Quiz
     {
         public int Id { get; set; }
-
-        [Required]
-        [StringLength(200)]
-        public string Title { get; set; }
-
-        public string Description { get; set; }
-
+        public string Question { get; set; }
+        public string CorrectAnswer { get; set; }
+        public ICollection<QuizOption> Options { get; set; } // Multiple options for a question
         public int? ModuleId { get; set; }
-
         [ForeignKey("ModuleId")]
         public virtual Module Module { get; set; }
 
-        public int? LessonId { get; set; }
 
-        [ForeignKey("LessonId")]
-        public virtual Lesson Lesson { get; set; }
-
-        public virtual ICollection<QuizQuestion> Questions { get; set; }
     }
 }

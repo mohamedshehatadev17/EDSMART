@@ -1581,7 +1581,6 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "EduSmart.Core": "1.0.0",
-          "EduSmart.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
@@ -1611,6 +1610,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
+          "EduSmart.Application": "1.0.0",
           "EduSmart.Core": "1.0.0"
         },
         "compile": {
@@ -4417,6 +4418,7 @@
       "AutoMapper >= 13.0.1",
       "EduSmart.Application >= 1.0.0",
       "EduSmart.Core >= 1.0.0",
+      "EduSmart.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
@@ -4430,11 +4432,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Presentation\\EduSmart.Presentation.csproj",
+      "projectUniqueName": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\EduSmart.Presentation.csproj",
       "projectName": "EduSmart.Presentation",
-      "projectPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Presentation\\EduSmart.Presentation.csproj",
+      "projectPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\EduSmart.Presentation.csproj",
       "packagesPath": "C:\\Users\\L-Stylash\\.nuget\\packages\\",
-      "outputPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Presentation\\obj\\",
+      "outputPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\L-Stylash\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4451,11 +4453,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj": {
-              "projectPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj"
+            "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj": {
+              "projectPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj"
             },
-            "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj": {
-              "projectPath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj"
+            "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj": {
+              "projectPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\EduSmart.Core.csproj"
+            },
+            "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj": {
+              "projectPath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj"
             }
           }
         }

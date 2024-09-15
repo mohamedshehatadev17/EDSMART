@@ -17,3 +17,21 @@ F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSma
 F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.genruntimeconfig.cache
 F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Application\bin\Debug\net8.0\EduSmart.Infrastructure.dll
 F:\.Net track iti\MVC\Day2\EduSmart\EduSmart.Application\bin\Debug\net8.0\EduSmart.Infrastructure.pdb
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\bin\Debug\net8.0\EduSmart.Application.deps.json
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\bin\Debug\net8.0\EduSmart.Application.runtimeconfig.json
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\bin\Debug\net8.0\EduSmart.Application.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\bin\Debug\net8.0\EduSmart.Application.pdb
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\bin\Debug\net8.0\EduSmart.Core.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\bin\Debug\net8.0\EduSmart.Core.pdb
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.csproj.AssemblyReference.cache
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.AssemblyInfoInputs.cache
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.AssemblyInfo.cs
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.csproj.CoreCompileInputs.cache
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.sourcelink.json
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.047F4DD2.Up2Date
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\refint\EduSmart.Application.dll
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.pdb
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\EduSmart.Application.genruntimeconfig.cache
+G:\ProjectApi_v1\EduSmart\EduSmart.Application\obj\Debug\net8.0\ref\EduSmart.Application.dll

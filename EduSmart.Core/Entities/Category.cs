@@ -15,8 +15,6 @@ namespace EduSmart.Core.Entities
             [StringLength(100)]
             public string Name { get; set; }
 
-            public string Description { get; set; }
-
             public virtual ICollection<Course> Courses { get; set; }
         }
 }

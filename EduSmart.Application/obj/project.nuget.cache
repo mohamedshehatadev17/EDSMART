@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aiZowvsbMKiDNwPv/+wlsLiPHlqZ75kkCkR2H2QbVSTlszC7TY5oqxKPVrEOMdM8rehNuNnYnF0d5/1smOc4Ng==",
+  "dgSpecHash": "om/0og9SLTr38nI9+PUVxvgT5ezzBp1u4iwOKZ2ROeH8zr8CoJ/JhmkD1D1D5nMiFgKarG5dxI/HtlTstIDf1Q==",
   "success": true,
-  "projectFilePath": "F:\\.Net track iti\\MVC\\Day2\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj",
+  "projectFilePath": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\EduSmart.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\L-Stylash\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\L-Stylash\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

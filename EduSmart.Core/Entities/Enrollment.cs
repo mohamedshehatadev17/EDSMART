@@ -8,22 +8,21 @@ using System.Threading.Tasks;
 
 namespace EduSmart.Core.Entities
 {
-      class Enrollment
+    public class Enrollment
     {
         public int Id { get; set; }
 
-       // [Required]
-       // public string StudentId { get; set; }
+        [Required]
+        public int StudentId { get; set; }
 
-        //[ForeignKey("StudentId")]
-       // public virtual ApplicationUser Student { get; set; }
+        [ForeignKey("StudentId")]
+        public  Student Student { get; set; }
 
         [Required]
         public int CourseId { get; set; }
 
         [ForeignKey("CourseId")]
-        public virtual Course Course { get; set; }
+        public  Course Course { get; set; }
 
-        public DateTime EnrolledAt { get; set; }
     }
 }

@@ -24,10 +24,8 @@ namespace EduSmart.Core.Entities
         public int ModuleId { get; set; }
 
         [ForeignKey("ModuleId")]
-        public virtual Module Module { get; set; }
+        public  Module Module { get; set; }
+        public ICollection<LessonCompletion> LessonCompletions { get; set; }
 
-        public virtual ICollection<MultimediaContent> MultimediaContents { get; set; }
-
-        public virtual Quiz LessonQuiz { get; set; }
     }
 }
