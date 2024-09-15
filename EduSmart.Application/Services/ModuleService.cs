@@ -28,7 +28,7 @@ namespace EduSmart.Application.Services
             return await _moduleRepository.GetModuleByIdAsync(id);
         }
 
-        public async Task AddModuleAsync(ModuleCreateDto moduleCreateDto)
+        public async Task<Module> AddModuleAsync(ModuleCreateDto moduleCreateDto)
         {
             // Example validation or business logic
             if (string.IsNullOrWhiteSpace(moduleCreateDto.Title))
@@ -42,6 +42,7 @@ namespace EduSmart.Application.Services
                 Description=moduleCreateDto.Description
             };
             await _moduleRepository.AddModuleAsync(module);
+            return module;
         }
 
         public async Task UpdateModuleAsync(Module module)

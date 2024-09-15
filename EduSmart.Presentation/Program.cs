@@ -58,6 +58,9 @@ namespace EduSmart.Presentation
 
             var app = builder.Build();
 
+            // use statc files
+            app.UseStaticFiles(); // Ensures the static files middleware is correctly used.
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

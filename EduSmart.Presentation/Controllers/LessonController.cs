@@ -22,7 +22,7 @@ namespace EduSmart.Presentation.Controllers
         public async Task<ActionResult<IEnumerable<LessonDTO>>> GetLessonsByModuleId(int moduleId)
         {
             var lessons = await _lessonService.GetLessonsByModuleIdAsync(moduleId);
-            return Ok();
+            return Ok(lessons);
         }
 
         [HttpGet("lesson/{id}")]
@@ -36,7 +36,7 @@ namespace EduSmart.Presentation.Controllers
             return Ok(lessonDTO);
         }
 
-        [HttpPost]
+        [HttpPost("/Add")]
         public async Task<IActionResult> AddLesson(LessonDTO lessonDTO)
         {
 
@@ -47,12 +47,9 @@ namespace EduSmart.Presentation.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateLesson(int id, LessonDTO lessonDTO)
         {
-            if (id != lessonDTO.Id)
-            {
-                return BadRequest();
-            }
+            
 
-            await _lessonService.UpdateLessonAsync(lessonDTO);
+            await _lessonService.UpdateLessonAsync(id,lessonDTO);
             return NoContent();
         }
 
