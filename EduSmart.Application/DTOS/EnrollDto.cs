@@ -11,19 +11,13 @@ namespace EduSmart.Application.DTOS
 {
     public class EnrollDto
     {
-        public int Id { get; set; }
 
         [Required]
-        public string StudentId { get; set; }
-
-        [ForeignKey("StudentId")]
-        public virtual Student Student { get; set; }
+        public int StudentId { get; set; }
 
         [Required]
         public int CourseId { get; set; }
 
-        [ForeignKey("CourseId")]
-        public virtual Course Course { get; set; }
 
     }
 }

@@ -10,10 +10,10 @@ namespace EduSmart.Application.Services
 {
     public  interface ILessonService
     {
-        Task<IEnumerable<Lesson>> GetLessonsByModuleIdAsync(int moduleId);
+        Task<IEnumerable<LessonDTO>> GetLessonsByModuleIdAsync(int moduleId);
         Task<LessonDTO> GetLessonByIdAsync(int lessonId);
         Task AddLessonAsync(LessonDTO lessonDTO);
-        Task UpdateLessonAsync(LessonDTO lessonDTO);
+        Task UpdateLessonAsync(int Id,LessonDTO lessonDTO);
         Task DeleteLessonAsync(int lessonId);
         //Task MarkStudentLessonCompleted(int lessonId,int studentId);
     }

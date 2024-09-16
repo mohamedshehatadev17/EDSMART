@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "EduSmart.Presentation.Controllers.LessonController",
+    "Method": "AddLesson",
+    "RelativePath": "Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lessonDTO",
+        "Type": "EduSmart.Application.DTOS.LessonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EduSmart.Presentation.Controllers.CourseController",
     "Method": "GetCourses",
     "RelativePath": "api/Course",
@@ -35,13 +51,28 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "courseDto",
-        "Type": "EduSmart.Application.DTOS.CourseUpdateDTO",
-        "IsRequired": true
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstructorId",
+        "Type": "System.Int32",
+        "IsRequired": false
       },
       {
         "Name": "image",
@@ -111,7 +142,7 @@
   {
     "ContainingType": "EduSmart.Presentation.Controllers.CourseController",
     "Method": "EnrollStudent",
-    "RelativePath": "api/Course/enroll/{courseId}",
+    "RelativePath": "api/Course/student/enroll/{courseId}/{StudentId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -122,24 +153,8 @@
         "IsRequired": true
       },
       {
-        "Name": "enrollDto",
-        "Type": "EduSmart.Application.DTOS.EnrollDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EduSmart.Presentation.Controllers.LessonController",
-    "Method": "AddLesson",
-    "RelativePath": "api/Lesson",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "lessonDTO",
-        "Type": "EduSmart.Application.DTOS.LessonDTO",
+        "Name": "StudentId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

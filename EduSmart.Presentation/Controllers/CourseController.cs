@@ -48,13 +48,13 @@ namespace EduSmart.Presentation.Controllers
         }
 
         // PUT: api/course/5
-        [HttpPut("{id:alpha}")]
-        public async Task<IActionResult> UpdateCourse(string id, [FromBody] CourseUpdateDTO courseDto,IFormFile image)
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> UpdateCourse(int id, [FromForm] CourseUpdateDTO courseDto,  IFormFile image)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-             await _courseService.UpdateCourseAsync(id, courseDto, image);
-            return NoContent();
+                await _courseService.UpdateCourseAsync(id, courseDto, image);
+            return NoContent(); //NoContent();
         }
 
         // DELETE: api/course/5
@@ -66,11 +66,11 @@ namespace EduSmart.Presentation.Controllers
             return NoContent();
         }
 
-        // POST: api/course/enroll/5
-        [HttpPost("enroll/{courseId}")]
-        public async Task<IActionResult> EnrollStudent(int courseId, [FromBody] EnrollDto enrollDto)
+        // POST: api/course/student/enroll/5
+        [HttpPost("student/enroll/{courseId:int}/{StudentId:int}")]
+        public async Task<IActionResult> EnrollStudent(int courseId,int StudentId)
         {
-            var result = await _courseService.EnrollStudentAsync(courseId, enrollDto.StudentId);
+            var result = await _courseService.EnrollStudentAsync(courseId, StudentId);
             if (!result) return BadRequest("Enrollment failed.");
             return Ok("Enrollment successful.");
         }

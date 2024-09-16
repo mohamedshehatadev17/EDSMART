@@ -22,6 +22,10 @@ namespace EduSmart.Application.Services
         public async Task<IEnumerable<LessonDTO>> GetLessonsByModuleIdAsync(int moduleId)
         {
             var lessons = await _lessonRepository.GetLessonsByModuleIdAsync(moduleId);
+            if (lessons == null || !lessons.Any())
+            {
+                throw new KeyNotFoundException($"No lessons found for module with Id {moduleId}");
+            }
             return lessons.Select(lesson => new LessonDTO
             {
                 Title = lesson.Title,
@@ -60,11 +64,12 @@ namespace EduSmart.Application.Services
 
         }
 
-        public async Task UpdateLessonAsync(LessonDTO lessonDTO)
+        public async Task UpdateLessonAsync(int Id,LessonDTO lessonDTO)
         {
-            var lesson = await _lessonRepository.GetLessonByIdAsync(lessonDTO.Id);
+            var lesson = await _lessonRepository.GetLessonByIdAsync(Id);
             if (lesson != null)
             {
+                lesson.Id=Id;
                 lesson.Title = lessonDTO.Title;
                 lesson.Content = lessonDTO.Content;
                 lesson.ModuleId = lessonDTO.ModuleId;
@@ -77,10 +82,7 @@ namespace EduSmart.Application.Services
             await _lessonRepository.DeleteLessonAsync(lessonId);
         }
 
-        Task<IEnumerable<Lesson>> ILessonService.GetLessonsByModuleIdAsync(int moduleId)
-        {
-            throw new NotImplementedException();
-        }
+       
 
        
     }

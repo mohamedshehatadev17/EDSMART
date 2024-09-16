@@ -67,14 +67,11 @@ public class CourseService : ICourseService
         await _courseRepository.SaveChangesAsync();
     }
 
-    public async Task UpdateCourseAsync(string id, CourseUpdateDTO courseDTO, IFormFile img)
+    public async Task<Course> UpdateCourseAsync(int id, CourseUpdateDTO courseDTO, IFormFile img)
     {
-        if (courseDTO.Id <= 0)
-        {
-            throw new ArgumentException("Invalid course ID.");
-        }
+        
 
-        var existingCourse = await _courseRepository.GetCourseByIdAsync(courseDTO.Id);
+        var existingCourse = await _courseRepository.GetCourseByIdAsync(id);
         if (existingCourse == null)
         {
             throw new Exception("Course not found.");
@@ -83,6 +80,7 @@ public class CourseService : ICourseService
         existingCourse.Title = courseDTO.Title;
         existingCourse.Description = courseDTO.Description;
         existingCourse.Price = courseDTO.Price;
+        existingCourse.InstructorId=courseDTO.InstructorId;
 
         if (img != null && img.Length > 0)
         {
@@ -91,6 +89,7 @@ public class CourseService : ICourseService
 
         await _courseRepository.UpdateCourseAsync(existingCourse);
         await _courseRepository.SaveChangesAsync();
+        return existingCourse;
     }
 
     public async Task<string> ConvertImageToBase64(IFormFile cover)
@@ -121,9 +120,6 @@ public class CourseService : ICourseService
         return await _enrollmentRepository.EnrollStudentAsync(courseId, studentId);
     }
 
-    public Task<bool> EnrollStudentAsync(int courseId, string studentId)
-    {
-        throw new NotImplementedException();
-    }
+    
     #endregion
 }

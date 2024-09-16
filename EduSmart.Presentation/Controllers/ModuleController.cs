@@ -28,11 +28,18 @@ namespace EduSmart.Presentation.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateModule([FromBody] ModuleCreateDto moduleDto)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            var moduleId = moduleDto.Id;
-             await _moduleService.AddModuleAsync(moduleDto);
-            return CreatedAtAction(nameof(GetModulesByCourseId), new { courseId = moduleDto.CourseId }, moduleId);
+            // Assuming AddModuleAsync returns the created Module object.
+            var createdModule = await _moduleService.AddModuleAsync(moduleDto);
+
+            // Assuming GetModulesByCourseId expects courseId as a route parameter.
+            return CreatedAtAction(
+                nameof(GetModulesByCourseId),
+                new { courseId = moduleDto.CourseId },
+                createdModule // Return the created module as part of the response
+            );
         }
     }
 
