@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0j0kySpTo4KDoaCbKYkWqPpS/qtpU0jI5RC3FkErtjE=",
+  "Hash": "eWWRqAVQvpOUfXWkj8wIB66BlI5WNZx2Q6rq0LIfbMg=",
   "Source": "EduSmart.Presentation",
   "BasePath": "_content/EduSmart.Presentation",
   "Mode": "Default",
@@ -110,6 +110,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\6bbdb69f-6025-4292-a0c9-bf8ceda65bee.png"
+    },
+    {
+      "Identity": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\wwwroot\\images\\8bf866d3-d8d8-4925-94fe-5190c0185af2.png",
+      "SourceId": "EduSmart.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\wwwroot\\",
+      "BasePath": "_content/EduSmart.Presentation",
+      "RelativePath": "images/8bf866d3-d8d8-4925-94fe-5190c0185af2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8bf866d3-d8d8-4925-94fe-5190c0185af2.png"
+    },
+    {
+      "Identity": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\wwwroot\\images\\d49c0385-47f1-4650-b42a-957b99c84b1f.png",
+      "SourceId": "EduSmart.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\wwwroot\\",
+      "BasePath": "_content/EduSmart.Presentation",
+      "RelativePath": "images/d49c0385-47f1-4650-b42a-957b99c84b1f.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d49c0385-47f1-4650-b42a-957b99c84b1f.png"
     }
   ]
 }

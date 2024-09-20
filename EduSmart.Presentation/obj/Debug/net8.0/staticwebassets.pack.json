@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\images\\6bbdb69f-6025-4292-a0c9-bf8ceda65bee.png"
     },
     {
+      "Id": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\wwwroot\\images\\8bf866d3-d8d8-4925-94fe-5190c0185af2.png",
+      "PackagePath": "staticwebassets\\images\\8bf866d3-d8d8-4925-94fe-5190c0185af2.png"
+    },
+    {
+      "Id": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\wwwroot\\images\\d49c0385-47f1-4650-b42a-957b99c84b1f.png",
+      "PackagePath": "staticwebassets\\images\\d49c0385-47f1-4650-b42a-957b99c84b1f.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EduSmart.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

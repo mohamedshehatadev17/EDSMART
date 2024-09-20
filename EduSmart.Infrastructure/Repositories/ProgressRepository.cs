@@ -12,7 +12,7 @@ namespace EduSmart.Infrastructure.Repositories
     public class ProgressRepository : IProgressRepository
     {
         private readonly EDContext _context;
-
+       
         public ProgressRepository(EDContext context)
         {
             _context = context;
