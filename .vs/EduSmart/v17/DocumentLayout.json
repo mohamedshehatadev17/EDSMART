@@ -3,74 +3,59 @@
   "WorkspaceRootPath": "G:\\ProjectApi_v1\\EduSmart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.StudentCourses.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{8510677A-CF18-4D35-8896-F537FB708292}|EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.infrastructure\\repositories\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8510677A-CF18-4D35-8896-F537FB708292}|EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj|solutionrelative:edusmart.infrastructure\\repositories\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Students.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Lessons.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|g:\\projectapi_v1\\edusmart\\edusmart.presentation\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|solutionrelative:edusmart.presentation\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|g:\\projectapi_v1\\edusmart\\edusmart.application\\dtos\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\dtos\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8510677A-CF18-4D35-8896-F537FB708292}|EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj|g:\\projectapi_v1\\edusmart\\edusmart.infrastructure\\repositories\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8510677A-CF18-4D35-8896-F537FB708292}|EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj|solutionrelative:edusmart.infrastructure\\repositories\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\services\\ilessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\services\\ilessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.presentation\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|solutionrelative:edusmart.presentation\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Modules.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Courses.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Enrollments.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|g:\\projectapi_v1\\edusmart\\edusmart.application\\dtos\\enrolldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\dtos\\enrolldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\dtos\\enrolldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\dtos\\courseupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\dtos\\courseupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8510677A-CF18-4D35-8896-F537FB708292}|EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8510677A-CF18-4D35-8896-F537FB708292}|EduSmart.Infrastructure\\EduSmart.Infrastructure.csproj|solutionrelative:edusmart.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\filesetting\\filesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\filesetting\\filesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|g:\\projectapi_v1\\edusmart\\edusmart.presentation\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|solutionrelative:edusmart.presentation\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.presentation\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|solutionrelative:edusmart.presentation\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|g:\\projectapi_v1\\edusmart\\edusmart.application\\dtos\\courseupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\dtos\\courseupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|solutionrelative:edusmart.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|g:\\projectapi_v1\\edusmart\\edusmart.application\\services\\progressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\services\\progressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\L-Stylash\\AppData\\Local\\Temp\\akj1on3k..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|g:\\projectapi_v1\\edusmart\\edusmart.application\\services\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\services\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\services\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\filesetting\\filesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\filesetting\\filesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\services\\progressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\services\\progressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.application\\services\\imoduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,10 +70,6 @@
       "RelativeMoniker": "D:0:0:{6F8CA9EA-A27E-4BA2-94A2-798F403DE345}|EduSmart.Application\\EduSmart.Application.csproj|solutionrelative:edusmart.application\\dtos\\lessoncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD7F8EB-79C4-4252-B731-16F1D0DB1DDF}|EduSmart.Presentation\\EduSmart.Presentation.csproj|solutionrelative:edusmart.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4C3470A1-34D6-4A5E-8AE2-90A31ABFC94C}|EduSmart.Core\\EduSmart.Core.csproj|G:\\ProjectApi_v1\\EduSmart\\edusmart.core\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C3470A1-34D6-4A5E-8AE2-90A31ABFC94C}|EduSmart.Core\\EduSmart.Core.csproj|solutionrelative:edusmart.core\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -100,12 +81,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -116,184 +93,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LessonDTO.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\LessonDTO.cs",
-              "RelativeDocumentMoniker": "EduSmart.Application\\DTOS\\LessonDTO.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\LessonDTO.cs",
-              "RelativeToolTip": "EduSmart.Application\\DTOS\\LessonDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "DocumentIndex": 0,
+              "Title": "EnrollmentRepository.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Infrastructure\\Repositories\\EnrollmentRepository.cs",
+              "RelativeDocumentMoniker": "EduSmart.Infrastructure\\Repositories\\EnrollmentRepository.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Infrastructure\\Repositories\\EnrollmentRepository.cs",
+              "RelativeToolTip": "EduSmart.Infrastructure\\Repositories\\EnrollmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:38:18.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.Lessons [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Lessons.sql",
-              "ToolTip": "dbo.Lessons [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-15T12:00:51.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LessonController.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Controllers\\LessonController.cs",
-              "RelativeDocumentMoniker": "EduSmart.Presentation\\Controllers\\LessonController.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Controllers\\LessonController.cs",
-              "RelativeToolTip": "EduSmart.Presentation\\Controllers\\LessonController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:38:29.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ILessonService.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ILessonService.cs",
-              "RelativeDocumentMoniker": "EduSmart.Application\\Services\\ILessonService.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ILessonService.cs",
-              "RelativeToolTip": "EduSmart.Application\\Services\\ILessonService.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAAA8AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:32:45.599Z",
+              "WhenOpened": "2024-09-17T08:51:53.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dbo.Students [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Students.sql",
-              "ToolTip": "dbo.Students [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-15T18:47:40.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbo.StudentCourses [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.StudentCourses.sql",
-              "ToolTip": "dbo.StudentCourses [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-15T18:48:31.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LessonService.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\LessonService.cs",
-              "RelativeDocumentMoniker": "EduSmart.Application\\Services\\LessonService.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\LessonService.cs",
-              "RelativeToolTip": "EduSmart.Application\\Services\\LessonService.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAAEsAAAA5AAAA",
+              "Title": "CourseDTO.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\CourseDTO.cs",
+              "RelativeDocumentMoniker": "EduSmart.Application\\DTOS\\CourseDTO.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\CourseDTO.cs",
+              "RelativeToolTip": "EduSmart.Application\\DTOS\\CourseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:27:26.223Z",
+              "WhenOpened": "2024-09-16T12:00:58.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LessonRepository.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Infrastructure\\Repositories\\LessonRepository.cs",
-              "RelativeDocumentMoniker": "EduSmart.Infrastructure\\Repositories\\LessonRepository.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Infrastructure\\Repositories\\LessonRepository.cs",
-              "RelativeToolTip": "EduSmart.Infrastructure\\Repositories\\LessonRepository.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:43:49.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ModuleController.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Controllers\\ModuleController.cs",
-              "RelativeDocumentMoniker": "EduSmart.Presentation\\Controllers\\ModuleController.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Controllers\\ModuleController.cs",
-              "RelativeToolTip": "EduSmart.Presentation\\Controllers\\ModuleController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAACIAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:46:24.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "dbo.Modules [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Modules.sql",
-              "ToolTip": "dbo.Modules [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-15T11:59:39.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "dbo.Courses [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Courses.sql",
-              "ToolTip": "dbo.Courses [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-15T18:25:38.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dbo.Enrollments [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/./EduSmartDB/True/SqlTable/dbo.Enrollments.sql",
-              "ToolTip": "dbo.Enrollments [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-15T18:50:12.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EnrollDto.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\EnrollDto.cs",
-              "RelativeDocumentMoniker": "EduSmart.Application\\DTOS\\EnrollDto.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\EnrollDto.cs",
-              "RelativeToolTip": "EduSmart.Application\\DTOS\\EnrollDto.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T18:37:22.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ProgressService.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ProgressService.cs",
-              "RelativeDocumentMoniker": "EduSmart.Application\\Services\\ProgressService.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ProgressService.cs",
-              "RelativeToolTip": "EduSmart.Application\\Services\\ProgressService.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAD4vxIAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T18:36:07.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ICourseService.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ICourseService.cs",
-              "RelativeDocumentMoniker": "EduSmart.Application\\Services\\ICourseService.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ICourseService.cs",
-              "RelativeToolTip": "EduSmart.Application\\Services\\ICourseService.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAMwBMAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T15:52:50.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "CourseUpdateDTO.cs",
               "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\CourseUpdateDTO.cs",
               "RelativeDocumentMoniker": "EduSmart.Application\\DTOS\\CourseUpdateDTO.cs",
@@ -306,33 +132,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "EduSmart.Presentation\\Controllers\\CourseController.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "EduSmart.Presentation\\Controllers\\CourseController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAAAEgAAABAAAAA",
+              "DocumentIndex": 2,
+              "Title": "EnrollDto.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\EnrollDto.cs",
+              "RelativeDocumentMoniker": "EduSmart.Application\\DTOS\\EnrollDto.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\EnrollDto.cs",
+              "RelativeToolTip": "EduSmart.Application\\DTOS\\EnrollDto.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T15:37:06.76Z",
+              "WhenOpened": "2024-09-15T18:37:22.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CourseService.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\CourseService.cs",
-              "RelativeDocumentMoniker": "EduSmart.Application\\Services\\CourseService.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\CourseService.cs",
-              "RelativeToolTip": "EduSmart.Application\\Services\\CourseService.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAAAHUAAAAuAAAA",
+              "DocumentIndex": 6,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "EduSmart.Application\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "EduSmart.Application\\Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T20:51:02.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T08:17:58.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 5,
+              "Title": "ICourseRepository.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Interfaces\\ICourseRepository.cs",
+              "RelativeDocumentMoniker": "EduSmart.Application\\Interfaces\\ICourseRepository.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Interfaces\\ICourseRepository.cs",
+              "RelativeToolTip": "EduSmart.Application\\Interfaces\\ICourseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T08:19:50Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "EduSmart.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "EduSmart.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T08:22:29.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FileSettings.cs",
               "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\FileSetting\\FileSettings.cs",
               "RelativeDocumentMoniker": "EduSmart.Application\\FileSetting\\FileSettings.cs",
@@ -340,12 +189,80 @@
               "RelativeToolTip": "EduSmart.Application\\FileSetting\\FileSettings.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T10:08:10.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T10:08:10.123Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 8,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\CourseService.cs",
+              "RelativeDocumentMoniker": "EduSmart.Application\\Services\\CourseService.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\CourseService.cs",
+              "RelativeToolTip": "EduSmart.Application\\Services\\CourseService.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAADwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T20:51:02.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "EduSmart.Presentation\\Controllers\\CategoryController.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "EduSmart.Presentation\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T08:34:47.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProgressService.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ProgressService.cs",
+              "RelativeDocumentMoniker": "EduSmart.Application\\Services\\ProgressService.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ProgressService.cs",
+              "RelativeToolTip": "EduSmart.Application\\Services\\ProgressService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAD4vxIAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T18:36:07.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\L-Stylash\\AppData\\Local\\Temp\\akj1on3k..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-16T15:12:23.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "EduSmart.Presentation\\Program.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Program.cs",
+              "RelativeToolTip": "EduSmart.Presentation\\Program.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAEsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:20:02.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICourseService.cs",
+              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ICourseService.cs",
+              "RelativeDocumentMoniker": "EduSmart.Application\\Services\\ICourseService.cs",
+              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ICourseService.cs",
+              "RelativeToolTip": "EduSmart.Application\\Services\\ICourseService.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAMwBAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T15:52:50.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "ModuleService.cs",
               "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\ModuleService.cs",
               "RelativeDocumentMoniker": "EduSmart.Application\\Services\\ModuleService.cs",
@@ -353,12 +270,11 @@
               "RelativeToolTip": "EduSmart.Application\\Services\\ModuleService.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAABQAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:51:48.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T11:51:48.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 14,
               "Title": "IModuleService.cs",
               "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\Services\\IModuleService.cs",
               "RelativeDocumentMoniker": "EduSmart.Application\\Services\\IModuleService.cs",
@@ -366,12 +282,11 @@
               "RelativeToolTip": "EduSmart.Application\\Services\\IModuleService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:51:05.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T11:51:05.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 16,
               "Title": "LessonCreateDto.cs",
               "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Application\\DTOS\\LessonCreateDto.cs",
               "RelativeDocumentMoniker": "EduSmart.Application\\DTOS\\LessonCreateDto.cs",
@@ -379,25 +294,11 @@
               "RelativeToolTip": "EduSmart.Application\\DTOS\\LessonCreateDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:36:04.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T11:36:04.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "EduSmart.Presentation\\Program.cs",
-              "ToolTip": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Presentation\\Program.cs",
-              "RelativeToolTip": "EduSmart.Presentation\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T10:20:02.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 17,
               "Title": "Lesson.cs",
               "DocumentMoniker": "G:\\ProjectApi_v1\\EduSmart\\EduSmart.Core\\Entities\\Lesson.cs",
               "RelativeDocumentMoniker": "EduSmart.Core\\Entities\\Lesson.cs",
@@ -405,8 +306,7 @@
               "RelativeToolTip": "EduSmart.Core\\Entities\\Lesson.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAiwBoAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T18:55:41.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T18:55:41.838Z"
             }
           ]
         }

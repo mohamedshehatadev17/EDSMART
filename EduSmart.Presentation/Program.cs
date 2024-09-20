@@ -21,6 +21,7 @@ namespace EduSmart.Presentation
                 options.UseSqlServer(builder.Configuration.GetConnectionString("EduSmart")));
 
             // Add Repositories
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddScoped<ICourseRepository, CourseRepository>();
             builder.Services.AddScoped<IModuleRepository, ModuleRepository>();
             builder.Services.AddScoped<IStudentRepository, StudentRepository>();
@@ -30,6 +31,7 @@ namespace EduSmart.Presentation
             builder.Services.AddScoped<ILessonCompletion, LessonCompletionRepository>();
 
             // Add Services
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<ICourseService, CourseService>();
             builder.Services.AddScoped<IModuleService, ModuleService>();
             builder.Services.AddScoped<IStudentService, StudentService>();
@@ -50,6 +52,10 @@ namespace EduSmart.Presentation
                 });
             });
 
+
+
+
+
             // Configure JSON options
             builder.Services.AddControllers().AddJsonOptions(options =>
             {
@@ -62,6 +68,12 @@ namespace EduSmart.Presentation
             app.UseStaticFiles(); // Ensures the static files middleware is correctly used.
 
             // Configure the HTTP request pipeline.
+
+            // Add services to the container
+      
+
+
+            ///===============
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
