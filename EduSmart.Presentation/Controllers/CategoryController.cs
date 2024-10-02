@@ -1,4 +1,5 @@
 ﻿using EduSmart.Application.Services;
+using EduSmart.Core.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,7 +14,7 @@ namespace EduSmart.Presentation.Controllers
         {
            _categoryService = categoryService;
         }
-        [HttpPost("/Create")]
+        [HttpPost]
         public async Task<ActionResult> CreateCategory([FromForm]string Name)
         {
             if (!ModelState.IsValid)
@@ -21,5 +22,12 @@ namespace EduSmart.Presentation.Controllers
             await _categoryService.AddCategory(Name);
             return Created(); 
         }
+        [HttpGet]
+        public async Task<ActionResult<List<Category>>> GetAllCategory()
+        {
+            var categories = await _categoryService.GetAllCategory();
+            return (categories);
+        }
+
     }
 }

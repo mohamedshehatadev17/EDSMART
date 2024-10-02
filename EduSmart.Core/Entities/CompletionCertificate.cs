@@ -17,7 +17,7 @@ namespace EduSmart.Core.Entities
         public int StudentId { get; set; }
         public Student Student { get; set; } // Navigation Property
         public DateTime DateIssued { get; set; }
-        public string CertificateUrl { get; set; } // URL to the generated certificate (e.g., PDF)
+        public string? CertificateUrl { get; set; } // URL to the generated certificate (e.g., PDF)
     }
 
 }

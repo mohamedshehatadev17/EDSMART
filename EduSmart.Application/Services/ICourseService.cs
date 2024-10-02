@@ -12,7 +12,7 @@ namespace EduSmart.Application.Services
    
         public interface ICourseService
         {
-            Task<IEnumerable<Course>> GetAllCoursesAsync();
+            Task<List<Course>> GetAllCoursesAsync();
             Task<Course> GetCourseByIdAsync(int id);
             Task AddCourseAsync(CourseDTO courseDto, IFormFile img);
             Task<Course> UpdateCourseAsync(int id, CourseUpdateDTO courseDTO, IFormFile? img);

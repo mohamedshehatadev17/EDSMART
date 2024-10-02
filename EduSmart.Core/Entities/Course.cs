@@ -19,7 +19,7 @@ namespace EduSmart.Core.Entities
         public string? Title { get; set; }
         public string? Description { get; set; }
         public double Price { get; set; }
-        public string? CourseImage { get; set; }
+         public string? CourseImage { get; set; }
         [Required]
         public int CategoryId { get; set; }
 

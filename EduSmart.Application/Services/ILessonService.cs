@@ -12,7 +12,7 @@ namespace EduSmart.Application.Services
     {
         Task<IEnumerable<LessonDTO>> GetLessonsByModuleIdAsync(int moduleId);
         Task<LessonDTO> GetLessonByIdAsync(int lessonId);
-        Task AddLessonAsync(LessonDTO lessonDTO);
+        Task AddLessonAsync(LessonCreateDto LessonCreateDto);
         Task UpdateLessonAsync(int Id,LessonDTO lessonDTO);
         Task DeleteLessonAsync(int lessonId);
         //Task MarkStudentLessonCompleted(int lessonId,int studentId);
