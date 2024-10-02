@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EduSmart.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+994559c7d1d0fd5d84a18a48629e7eadb975920d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a06796b994a3bcad43bb626ba8308963700db87")]
 [assembly: System.Reflection.AssemblyProductAttribute("EduSmart.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EduSmart.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

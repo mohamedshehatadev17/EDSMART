@@ -37,19 +37,19 @@ namespace EduSmart.Presentation.Controllers
         }
 
         // POST: api/course
-        [HttpPost("create/")]
+        [HttpPost]
         public async Task<IActionResult> CreateCourse([FromForm] CourseDTO courseDto, IFormFile CourseImage)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
              await _courseService.AddCourseAsync(courseDto, CourseImage);
-            return Ok("created successfully");
+            return Ok(new { message = "created successfully" });
         }
 
         // PUT: api/course/5
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> UpdateCourse(int id, [FromForm] CourseUpdateDTO courseDto,  IFormFile image)
+        public async Task<IActionResult> UpdateCourse(int id, [FromForm] CourseUpdateDTO courseDto, [FromForm] IFormFile image)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 

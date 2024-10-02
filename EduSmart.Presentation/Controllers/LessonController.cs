@@ -25,7 +25,7 @@ namespace EduSmart.Presentation.Controllers
             return Ok(lessons);
         }
 
-        [HttpGet("lesson/{id}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<LessonDTO>> GetLessonById(int id)
         {
             var lessonDTO = await _lessonService.GetLessonByIdAsync(id);
@@ -36,21 +36,45 @@ namespace EduSmart.Presentation.Controllers
             return Ok(lessonDTO);
         }
 
-        [HttpPost("/Add")]
-        public async Task<IActionResult> AddLesson(LessonDTO lessonDTO)
+        [HttpPost]
+        public async Task<IActionResult> AddLesson([FromForm] LessonCreateDto LessonCreateDto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            await _lessonService.AddLessonAsync(lessonDTO);
-            return CreatedAtAction(nameof(GetLessonById), new { id = lessonDTO.Id }, lessonDTO);
+            try
+            {
+                await _lessonService.AddLessonAsync(LessonCreateDto);
+                return Created();
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, "An error occurred while processing your request.");
+            }
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateLesson(int id, LessonDTO lessonDTO)
+        public async Task<IActionResult> UpdateLesson(int id, [FromForm] LessonDTO lessonDTO)
         {
-            
+            if (lessonDTO.VideoFile != null)
+            {
+                if (!IsValidVideoFile(lessonDTO.VideoFile))
+                {
+                    return BadRequest("Invalid video file. Only .mp4 files are allowed.");
+                }
+            }
 
-            await _lessonService.UpdateLessonAsync(id,lessonDTO);
+            await _lessonService.UpdateLessonAsync(id, lessonDTO);
             return NoContent();
+        }
+
+        private bool IsValidVideoFile(IFormFile file)
+        {
+            // Check if the file is a video file (you might want to add more checks)
+            return file.ContentType.ToLower() == "video/mp4";
         }
 
         [HttpDelete("{id}")]

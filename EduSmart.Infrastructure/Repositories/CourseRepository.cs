@@ -19,12 +19,12 @@ namespace EduSmart.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Course>> GetAllCoursesAsync()
+        public async Task<List<Course>> GetAllCoursesAsync()
         {
-            return await _context.Courses
-                .Include(c => c.Category)
-                .Include(c => c.Instructor)
-                .ToListAsync();
+            return await _context.Courses.Include(c=>c.Modules).ToListAsync();
+                //.Include(c => c.Category)
+                //.Include(c => c.Instructor)
+                //.ToListAsync();
         }
 
         public async Task<Course> GetCourseByIdAsync(int id)

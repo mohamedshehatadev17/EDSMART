@@ -1,4 +1,5 @@
 ﻿using EduSmart.Application.Interfaces;
+using EduSmart.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,12 @@ namespace EduSmart.Application.Services
 
         public Task AddCategory(string categoryName)
         {
-            _categoryRepository.AddCategoryByName(categoryName);
-            return Task.CompletedTask;
+            return _categoryRepository.AddCategoryByName(categoryName);
+        }
+
+        public Task<List<Category>> GetAllCategory()
+        {
+            return _categoryRepository.GetAllCategory();
         }
     }
 }

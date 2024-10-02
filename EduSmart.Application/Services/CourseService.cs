@@ -5,6 +5,7 @@ using EduSmart.Application.Services;
 using EduSmart.Core.Entities;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using System.IO;
 
 public class CourseService : ICourseService
 {
@@ -27,7 +28,7 @@ public class CourseService : ICourseService
         _imagesPath = $"{_webHostEnvironment.WebRootPath}{FileSettings.ImagesPath}";
     }
 
-    public async Task<IEnumerable<Course>> GetAllCoursesAsync()
+    public async Task<List<Course>> GetAllCoursesAsync()
     {
         return await _courseRepository.GetAllCoursesAsync();
     }
@@ -100,7 +101,6 @@ public class CourseService : ICourseService
 
         using var stream = File.Create(path);
         await cover.CopyToAsync(stream);
-
         return coverName;
     }
 

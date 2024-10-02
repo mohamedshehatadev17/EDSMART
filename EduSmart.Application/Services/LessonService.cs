@@ -7,16 +7,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 
 namespace EduSmart.Application.Services
 {
+
     public class LessonService :ILessonService
     {
+        private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly ILessonRepository _lessonRepository;
 
-        public LessonService(ILessonRepository lessonRepository)
+        public LessonService(ILessonRepository lessonRepository, IWebHostEnvironment webHostEnvironment)
         {
             _lessonRepository = lessonRepository;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public async Task<IEnumerable<LessonDTO>> GetLessonsByModuleIdAsync(int moduleId)
@@ -45,37 +49,97 @@ namespace EduSmart.Application.Services
             };
         }
 
-        public async Task AddLessonAsync(LessonDTO lessonDTO)
+        public async Task AddLessonAsync(LessonCreateDto LessonCreateDto)
         {
-            if (lessonDTO != null)
+            if (LessonCreateDto == null)
             {
-                var lesson = new Lesson
+                throw new ArgumentNullException(nameof(LessonCreateDto));
+            }
+
+            var lesson = new Lesson
+            {
+                Title = LessonCreateDto.Title ?? throw new ArgumentException("Title cannot be null"),
+                ModuleId = LessonCreateDto.ModuleId
+            };
+
+            if (LessonCreateDto.VideoFile != null)
+            {
+                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");
+                string uniqueFileName = Guid.NewGuid().ToString() + "_" + LessonCreateDto.VideoFile.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                Directory.CreateDirectory(uploadsFolder); // Ensure the uploads folder exists
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
-                    Title = lessonDTO.Title,
-                    Content = lessonDTO.Content,
-                    ModuleId = lessonDTO.ModuleId
-                };
-                await _lessonRepository.AddLessonAsync(lesson);
-            }
-            else
-            {
-                throw new Exception("not valid");
+                    await LessonCreateDto.VideoFile.CopyToAsync(fileStream);
+                }
+
+                lesson.Content += $"\n[VIDEO]/uploads/{uniqueFileName}[/VIDEO]";
             }
 
+            await _lessonRepository.AddLessonAsync(lesson);
         }
 
-        public async Task UpdateLessonAsync(int Id,LessonDTO lessonDTO)
+        public async Task UpdateLessonAsync(int id, LessonDTO lessonDTO)
         {
-            var lesson = await _lessonRepository.GetLessonByIdAsync(Id);
-            if (lesson != null)
+            var lesson = await _lessonRepository.GetLessonByIdAsync(id);
+            if (lesson == null)
             {
-                lesson.Id=Id;
-                lesson.Title = lessonDTO.Title;
-                lesson.Content = lessonDTO.Content;
-                lesson.ModuleId = lessonDTO.ModuleId;
-                await _lessonRepository.UpdateLessonAsync(lesson);
+                throw new KeyNotFoundException($"Lesson with id {id} not found");
+            }
+
+            lesson.Title = lessonDTO.Title;
+            lesson.Content = lessonDTO.Content;
+            lesson.ModuleId = lessonDTO.ModuleId;
+
+            if (lessonDTO.VideoFile != null)
+            {
+                // Remove old video path from content if exists
+                lesson.Content = RemoveOldVideoPath(lesson.Content);
+
+                // Delete old video file if exists
+                DeleteOldVideoFile(lesson.Content);
+
+                // Upload new video
+                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");
+                string uniqueFileName = Guid.NewGuid().ToString() + "_" + lessonDTO.VideoFile.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await lessonDTO.VideoFile.CopyToAsync(fileStream);
+                }
+
+                string videoPath = "/uploads/" + uniqueFileName;
+
+                // Append the new video path to the content
+                lesson.Content += $"\n[VIDEO]{videoPath}[/VIDEO]";
+            }
+
+            await _lessonRepository.UpdateLessonAsync(lesson);
+        }
+
+        private string RemoveOldVideoPath(string content)
+        {
+            // Remove the old video path from the content
+            return System.Text.RegularExpressions.Regex.Replace(content, @"\[VIDEO\].*?\[/VIDEO\]", "");
+        }
+
+        private void DeleteOldVideoFile(string content)
+        {
+            var match = System.Text.RegularExpressions.Regex.Match(content, @"\[VIDEO\](.*?)\[/VIDEO\]");
+            if (match.Success)
+            {
+                string oldVideoPath = match.Groups[1].Value;
+                var oldFilePath = Path.Combine(_webHostEnvironment.WebRootPath, oldVideoPath.TrimStart('/'));
+                if (File.Exists(oldFilePath))
+                {
+                    File.Delete(oldFilePath);
+                }
             }
         }
+
 
         public async Task DeleteLessonAsync(int lessonId)
         {

@@ -27,10 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Videos\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\images\52265c13-53d8-44ca-a20f-11c25428f09b.jpeg" />
     <None Include="wwwroot\images\64d0459a-52ac-4def-bee9-1fd64da05711.jpeg" />
   </ItemGroup>

@@ -51,8 +51,13 @@ namespace EduSmart.Presentation
                     Description = "API documentation for the EduSmart application"
                 });
             });
-
-
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("http://localhost:4200")
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod());
+            });
 
 
 
@@ -70,7 +75,7 @@ namespace EduSmart.Presentation
             // Configure the HTTP request pipeline.
 
             // Add services to the container
-      
+          
 
 
             ///===============
@@ -84,6 +89,7 @@ namespace EduSmart.Presentation
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseAuthorization();
 
